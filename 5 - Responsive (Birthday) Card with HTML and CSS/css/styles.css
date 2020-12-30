@@ -1,3 +1,7 @@
+* {
+    transition: all 0.2s ease-in-out;
+}
+
 body{
     background: #008888;
     display: grid;
@@ -16,12 +20,41 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    padding: 1em;
+    overflow: hidden;
+}
+
+
+@media only screen and (min-width:1000px){
+    .card{
+        flex-direction: row-reverse;
+    }
+    .cad img.birthday{
+        width: 100%;
+        max-width: 50vh;
+        max-height: unset;
+    }
+}
+
+@media only screen and (max-height:640px){
+    .card{
+        flex-direction: row-reverse;
+    }
+    .cad img.birthday{
+        width: 100%;
+        max-width: 50vh;
+        max-height: unset;
+    }
 }
 
 img.birthday{
     max-height: 40vh;
 }   
 
+.text{
+    padding: 1em;
+}
 .muted{
     opacity: 0.8;
 
