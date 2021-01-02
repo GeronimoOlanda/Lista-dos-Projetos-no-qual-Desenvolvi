@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+:root{
+    --bg:#43345d; 
+    --roxoa:#6c5ba5; 
+    --white: #fff;
+}
 
 *{
     margin: 0;
@@ -12,7 +17,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #43345d;
+    background-color: var(--bg);
 }
 
 a{
@@ -31,10 +36,23 @@ a span{
     width: 100%;
     height: 100%;
 
-    color: #fff;
-    background-color: #6c5ba5;
+    color: var(--white);
+    background-color:var(--roxoa) ;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+a span:nth-child(2){
+    color: var(--roxoa);
+    background-color: var(--white);
+    overflow: hidden;
+
+    z-index: 2;
+    transition: 0.5%;
 }
