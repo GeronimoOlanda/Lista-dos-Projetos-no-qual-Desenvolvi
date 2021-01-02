@@ -54,5 +54,15 @@ a span:nth-child(2){
     overflow: hidden;
 
     z-index: 2;
-    transition: 0.5%;
+    transition: 0.5s;
+
+    clip-path: polygon(60% 0, 100% 0%, 100% 100%, 60% 100%, 40% 53%);
+}
+
+a span:nth-child(2):hover{
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%, 0 50%);
+}
+
+a span:nth-child(1):hover ~ span:nth-child(2) {
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%, 100% 50%);
 }
